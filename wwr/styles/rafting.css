@@ -47,7 +47,6 @@ article {
     text-decoration: none;
 }
 
-/* --- Hero Div Styles --- */
 .hero {
     position: relative;
 }
@@ -69,7 +68,6 @@ h1 {
     color: #fff;
 }
 
-/* Estilo para el article superpuesto (puedes ajustar el color de fondo y la posición) */
 .hero article {
     position: absolute;
     top: 150px;
@@ -81,4 +79,53 @@ h1 {
 .hero article img {
     float: right;
     width: 125px;
+}
+
+header img {
+    width: 90px;
+    height: auto;
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+header nav a:hover {
+    color: var(--secondary-color);
+}
+
+.socialmedia img {
+    width: 50px;
+    height: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+header nav {
+    display: flex;
+    gap: 20px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    margin-top: 20px;
+    border-top: 1px solid var(--accent1-color);
+}
+
+.socialmedia {
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
 }
