@@ -98,17 +98,17 @@ header nav a:hover {
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 100px 1fr; 
     align-items: center;
     padding: 10px 0;
 }
 
 header nav {
     display: flex;
+    justify-content: space-around; 
     gap: 20px;
 }
-
 footer {
     display: flex;
     justify-content: space-between;
@@ -123,4 +123,42 @@ footer {
     gap: 15px;
     margin: 0;
     padding: 0;
+}
+.history h2 {
+    text-align: center;
+}
+
+.history-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px;
+    align-items: center;
+}
+
+.history-content img {
+    width: 100%;
+    height: auto;
+}
+
+.adventures h2 {
+    text-align: center;
+}
+
+.adventure-gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.adventure-gallery figure {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.adventure-gallery img {
+    width: 100%;
+    height: 150px; 
+    object-fit: cover;
+    border-radius: 5px;
 }
